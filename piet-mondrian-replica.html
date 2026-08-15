@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+
+    h1 {
+      text-align: center;
+    }
+
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+      gap: 9px;
+      background-color: #000;
+      max-width: 748px;
+      max-height: 748px;
+    }
+
+    .box-1 {
+      background-color: #E72F24;
+    }
+
+    .box-2 {
+      background-color: #F0F1EC;
+      grid-column: span 3;
+    }
+    
+    .box-3 {
+      background-color: #F0F1EC;
+      grid-row: span 2;
+    }
+    
+    .box-4 {
+      background-color: #F0F1EC;
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .box-5 {
+      background-color: #004592;
+      margin-bottom: 1px;
+    }
+
+    .box-6 {
+      background-color: #F0F1EC;
+      grid-row: span 2;
+    }
+
+    .box-7 {
+      background-color: #F0F1EC;
+    }
+
+    .box-8 {
+      background-color: #F9D01E;
+    }
+
+    .box-9 {
+      background-color: #232629;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>Piet Mondrian Painting Replica</h1>
+
+<div class="container">
+  <div class="box-1"></div>
+  <div class="box-2"></div>
+  <div class ="box-3"></div>
+  <div class ="box-4"></div>
+  <div class ="box-5"></div>
+  <div class="box-6"></div>
+  <div class ="box-7"></div>
+  <div class ="box-8"></div>
+  <div class ="box-9"></div>
+</div>
+
+</body>
+</html>
