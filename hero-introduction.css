@@ -1,0 +1,139 @@
+.gradient-background svg {
+    width: 300px;
+    height: auto;
+    margin:0 auto;
+}
+
+.gradient-background {
+    background-color: #DF301C;
+    height: 60vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.gradient-text {
+    color: #FFF1D1;
+    font-family: 'Cinzel', serif;
+    font-weight: 2000;
+    letter-spacing: 4px;
+}
+
+.gradient-text span {
+    position: relative;
+    display: inline-block;
+}
+
+.gradient-text span::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: -6px;
+    left: 0;
+    background: linear-gradient(90deg, #ff4500, #ff8c00, #ff007f);
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(255, 69, 0, 0.7);
+}
+
+#about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    letter-spacing: 3px;
+
+    
+}
+
+#swordsman-img {
+    background-color:#FFF1D1;
+    border-radius: 50%;
+}
+
+.divider-subtle {
+    width: 100%;
+    max-width: 800px;
+    height: 5px;
+    margin: 4rem auto;
+    background: linear-gradient(
+        90deg, 
+        transparent 0%, 
+        #00B7CD 50%, 
+        transparent 100%
+    );
+    opacity: 0.6;
+}
+
+.skills-row {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    letter-spacing: 2px;
+    margin-top:20px;
+}
+
+.skills-row h5 {
+    font-size: clamp(14px, 1.2vw, 18px);
+}
+
+
+
+
+@media (max-width: 1295px) {
+    .skills-row {
+        width: 70%;
+        text-align: center;
+    }
+
+    .skills-row > * {
+        margin-top: 20px
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-row {
+        width: 90%;
+        text-align: center;
+    }
+
+    .skills-row > * {
+        margin-top: 20px
+    }
+}
+
+.contact-me {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    letter-spacing: 2px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
